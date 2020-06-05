@@ -1,0 +1,42 @@
+//////im not intending
+
+#foot {
+  margin-top: 10%;
+  background: url("http://thememine.net/themeforest/anada/assets/img/shape/6.svg");
+  background-size: cover;
+  li {
+    list-style: none;
+    line-height: 45px;
+  }
+  .social {
+      margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    i {
+      list-style: none;
+      padding: 5px;
+      display: inline-block;
+    height: 37px;
+    width: 37px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    }
+    .face{
+        background-color:#6610f2;
+    }
+    .twit{
+        background-color: #007bff;
+    }
+    .insta{
+        background-color: #dc3545;
+    }
+    .you{
+        background-color: #343a40;
+    }
+  }
+  
+}

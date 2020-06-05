@@ -1,0 +1,136 @@
+#first-section {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 247, 252, 1) 36%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin-bottom: 50px;
+  .double-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 50px;
+    .info {
+      span {
+        margin-bottom: 50px;
+      }
+      h2 {
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: 800;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #666666;
+        line-height: 28px;
+        margin: 0 0 15px;
+        text-transform: none;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+#second-section {
+  background: url("http://thememine.net/themeforest/anada/assets/img/shape/6.svg");
+  background-size: cover;
+  img {
+    border: none;
+    outline: none;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .crusader .item {
+    height: 25rem;
+    padding: 1rem;
+    padding: 50px;
+    border-bottom: 3px solid #437eeb;
+    box-shadow: 0 0 10px #cccccc;
+    background: #ffffff;
+    border-radius: 10px;
+
+    .icon {
+      font-size: 70px;
+    }
+    h3 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+#sixth-section {
+  @include clearfix;
+  .skill-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .image-box {
+      position: relative;
+      .image1 {
+        z-index: -1;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        margin-right: 20%;
+        border: 10px solid #ffffff;
+        box-shadow: 0 0 10px #cccccc;
+        max-width: 80%;
+      }
+      .image2 {
+        position: absolute;
+        top: 240px;
+        left: 362px;
+        border: 10px solid #ffffff;
+        box-shadow: 0 0 10px #cccccc;
+        max-width: 60%;
+      }
+    }
+  }
+}
+#eighth-section {
+  background-color: $secondary-color;
+  margin-top: 100px;
+  .heading {
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    i {
+      text-align: center;
+      padding: 5px;
+      border-radius: 50%;
+      border: 1px dashed white;
+    }
+  }
+  .head-item {
+    .item {
+      box-shadow: 0 0 10px #cccccc;
+      background: #ffffff;
+      border-radius: 10px;
+      .thumb {
+        a {
+          position: relative;
+          span {
+            background-color: white;
+            position: absolute;
+            top: 120px;
+            left: 40px;
+            width: 60px;
+            text-align: center;
+            color: black;
+          }
+        }
+      }
+      .info {
+        .meta {
+          margin-top: 50px;
+          p {
+            font-family: monospace;
+          }
+        }
+      }
+    }
+  }
+}
