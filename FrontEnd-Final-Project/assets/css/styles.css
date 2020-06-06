@@ -3176,6 +3176,80 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   max-width: 60%;
 }
 
+#blog-content .item {
+  width: 70%;
+}
+
+#blog-content .item .thumb a img {
+  position: relative;
+}
+
+#blog-content .item .thumb a .date {
+  position: absolute;
+  bottom: -25px;
+  left: 100px;
+  background-color: white;
+  width: 70px;
+}
+
+#blog-content .item .info .meta ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+#blog-content .item .info .meta ul li {
+  display: inline-block;
+}
+
+#blog-comment .comment-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#blog-comment img {
+  width: 100px;
+}
+
+#blog-comment .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#blog-comment .post-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#blog-comment .post-tags .social li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+#blog-comment .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#blog-comment .inputs input {
+  height: 66px;
+  width: 266px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
 #foot {
   margin-top: 10%;
   background: url("http://thememine.net/themeforest/anada/assets/img/shape/6.svg");
