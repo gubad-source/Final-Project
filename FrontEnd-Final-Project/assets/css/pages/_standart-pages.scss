@@ -1,0 +1,92 @@
+#standart-footer {
+  margin-top: 10%;
+  background: url("http://thememine.net/themeforest/anada/assets/img/shape/6.svg");
+  background-size: cover;
+  li {
+    list-style: none;
+    line-height: 45px;
+  }
+  .social {
+    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    i {
+      list-style: none;
+      padding: 5px;
+      display: inline-block;
+      height: 37px;
+      width: 37px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .face {
+      background-color: #6610f2;
+    }
+    .twit {
+      background-color: #007bff;
+    }
+    .insta {
+      background-color: #dc3545;
+    }
+    .you {
+      background-color: #343a40;
+    }
+  }
+}
+#standart-section {
+  background-color: $secondary-color;
+  margin-top: 100px;
+  .heading {
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    i {
+      text-align: center;
+      padding: 5px;
+      border-radius: 50%;
+      border: 1px dashed white;
+    }
+  }
+  .head-item {
+    .item {
+      box-shadow: 0 0 10px #cccccc;
+      background: #ffffff;
+      border-radius: 10px;
+      .thumb {
+        a {
+          position: relative;
+          span {
+            position: absolute;
+            top: 286px;
+            left: 40px;
+            width: 105px;
+            text-align: center;
+            color: black;
+            background: #ffffff;
+            padding: 15px 30px;
+            text-transform: capitalize;
+            font-weight: 600;
+            line-height: 27px;
+            box-shadow: 0 0 10px #cccccc;
+            border-radius: 5px;
+          }
+        }
+      }
+      .info {
+        margin-top: 50px;
+        .meta {
+          margin-top: 50px;
+          p {
+            font-family: monospace;
+            i{
+                color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,4 @@
 $(document).ready(function () {
-
-    
-
     function wowAnimation() {
         var wow = new WOW({
             boxClass: 'wow',

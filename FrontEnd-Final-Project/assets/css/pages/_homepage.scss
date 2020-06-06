@@ -44,9 +44,9 @@
   }
 
   .crusader .item {
-    height: 25rem;
+    height: 40rem;
     padding: 1rem;
-    padding: 50px;
+    
     border-bottom: 3px solid #437eeb;
     box-shadow: 0 0 10px #cccccc;
     background: #ffffff;
@@ -55,7 +55,7 @@
     .icon {
       font-size: 70px;
     }
-    h3 {
+    h4 {
       font-weight: 700;
       margin-bottom: 25px;
     }
@@ -91,6 +91,7 @@
     }
   }
 }
+
 #eighth-section {
   background-color: $secondary-color;
   margin-top: 100px;
@@ -134,3 +135,17 @@
     }
   }
 }
+
+// #testimonial-area{
+//   .testimonial .item {
+//     height: 10rem;
+//     padding: 1rem;
+//     display: flex;
+//   }
+//   .testimonial .item h4 {
+//     color: #fff;
+//     font-weight: 400;
+//     margin-top: 0rem;
+//   }
+  
+// }

@@ -1,0 +1,142 @@
+#about-footer {
+  margin-top: 10%;
+  background: url("http://thememine.net/themeforest/anada/assets/img/shape/6.svg");
+  background-size: cover;
+  li {
+    list-style: none;
+    line-height: 45px;
+  }
+  .social {
+    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    i {
+      list-style: none;
+      padding: 5px;
+      display: inline-block;
+      height: 37px;
+      width: 37px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .face {
+      background-color: #6610f2;
+    }
+    .twit {
+      background-color: #007bff;
+    }
+    .insta {
+      background-color: #dc3545;
+    }
+    .you {
+      background-color: #343a40;
+    }
+  }
+}
+#features {
+  .item {
+    color: white;
+    height: 500px;
+    box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+    padding: 50px 37px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    ul {
+      list-style: none;
+      li {
+        line-height: 50px;
+      }
+    }
+  }
+}
+#story {
+  .story-item {
+    .item {
+      h5 {
+        background: linear-gradient(
+          90deg,
+          rgba(30, 85, 189, 1) 0%,
+          rgba(67, 126, 235, 1) 100%
+        );
+        color: #ffffff;
+        display: inline-block;
+        padding: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+#experts {
+  .item {
+    .thumb {
+      img {
+        border-radius: 50%;
+        max-width: 80%;
+      }
+    }
+    .info {
+      text-align: center;
+      position: absolute;
+      top: 245px;
+      left: 45px;
+      .social {
+        ul {
+          list-style: none;
+          display: inline-block;
+          background: linear-gradient(
+            90deg,
+            rgba(30, 85, 189, 1) 0%,
+            rgba(67, 126, 235, 1) 100%
+          );
+          padding: 11px 40px;
+          box-shadow: 0 0 10px #cccccc;
+          border-radius: 30px;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin: 5px;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.skill-items {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  .image-box {
+    position: relative;
+    .image1 {
+      z-index: -1;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      margin-right: 20%;
+      border: 10px solid #ffffff;
+      box-shadow: 0 0 10px #cccccc;
+      max-width: 80%;
+    }
+    .image2 {
+      position: absolute;
+      top: 240px;
+      left: 362px;
+      border: 10px solid #ffffff;
+      box-shadow: 0 0 10px #cccccc;
+      max-width: 60%;
+    }
+  }
+}
