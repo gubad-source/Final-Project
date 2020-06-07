@@ -1,0 +1,16 @@
+#services{
+    background-color: $secondary-color;
+    ul{
+        list-style: none;
+        line-height: 40px;
+    }
+    .services-content{
+        
+       p{
+           color: $text-color;
+       }
+        img{
+            max-width: 95%;
+        }
+    }
+}

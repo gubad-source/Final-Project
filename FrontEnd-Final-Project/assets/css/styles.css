@@ -2805,7 +2805,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 #second-section .crusader .item {
-  height: 40rem;
+  height: 20rem;
   padding: 1rem;
   border-bottom: 3px solid #437eeb;
   -webkit-box-shadow: 0 0 10px #cccccc;
@@ -2910,6 +2910,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #eighth-section .head-item .item .info .meta p {
   font-family: monospace;
+}
+
+#fifth-section .testimonial .item {
+  height: 30rem;
+  background: whitesmoke;
+  padding: 1rem;
+  line-height: 70px;
+}
+
+#fifth-section .testimonial .item span::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 540px;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: yellowgreen;
 }
 
 #standart-footer {
@@ -3248,6 +3266,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 266px;
   border: none;
   border-bottom: 1px solid black;
+}
+
+#services {
+  background-color: #f4f7fc;
+}
+
+#services ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+#services .services-content p {
+  color: #666666;
+}
+
+#services .services-content img {
+  max-width: 95%;
 }
 
 #foot {

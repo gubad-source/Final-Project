@@ -44,7 +44,7 @@
   }
 
   .crusader .item {
-    height: 40rem;
+    height: 20rem;
     padding: 1rem;
     
     border-bottom: 3px solid #437eeb;
@@ -136,16 +136,25 @@
   }
 }
 
-// #testimonial-area{
-//   .testimonial .item {
-//     height: 10rem;
-//     padding: 1rem;
-//     display: flex;
-//   }
-//   .testimonial .item h4 {
-//     color: #fff;
-//     font-weight: 400;
-//     margin-top: 0rem;
-//   }
+#fifth-section{
+  .testimonial .item {
+    height: 30rem;
+    background: whitesmoke;
+    padding: 1rem;
+    line-height: 70px;
+    
+      span::after{
+        content:"";
+        position: absolute;
+        top: 10px;
+        left: 540px;
+        opacity: 0.3;
+        border-radius:50%;
+        padding: 30px;
+        background-color: yellowgreen;
+      }
+    
+   
+  }
   
-// }
+}
