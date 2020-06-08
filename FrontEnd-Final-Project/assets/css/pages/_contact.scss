@@ -1,0 +1,23 @@
+#connection{
+    position: relative;
+    height: 500px;
+    
+    .connection-items{
+        .item{
+            display: flex;
+        }
+    }
+
+
+form{
+    .form-group{
+        .name{
+            width: 810px;
+        }
+        input{
+            width:350px;
+        }
+    }
+}
+
+}

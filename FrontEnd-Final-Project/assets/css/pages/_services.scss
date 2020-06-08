@@ -1,3 +1,5 @@
+
+/// this page has its default css settings.
 #services{
     background-color: $secondary-color;
     ul{
@@ -12,5 +14,9 @@
         img{
             max-width: 95%;
         }
+    }
+    .icon-info{
+        display: flex;
+        flex-wrap: nowrap;
     }
 }

@@ -2752,6 +2752,74 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: zoomOutUp;
 }
 
+#header .anada-navigation {
+  height: 80px;
+  position: fixed;
+  z-index: 3;
+}
+
+#header .anada-navigation img {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#header .anada-navigation .nav {
+  margin-left: 300px;
+}
+
+#header .anada-navigation .nav .dropdown {
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#header .anada-navigation .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#header .anada-navigation .nav .dropdown:hover p {
+  color: #437eeb;
+}
+
+#header .anada-navigation .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+#header .anada-navigation .nav .dropdown-content li {
+  list-style: none;
+  width: 180px;
+}
+
+#header .anada-navigation .nav .dropdown-content li:hover {
+  cursor: pointer;
+}
+
+#header .anada-navigation .nav .dropdown-content li a {
+  color: #666666;
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+#header .anada-navigation .nav .dropdown-content li a:hover {
+  text-decoration: none;
+  color: #437eeb;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 #first-section {
   background: -webkit-gradient(linear, left top, right top, color-stop(36%, #f4f7fc), to(white));
   background: linear-gradient(90deg, #f4f7fc 36%, white 100%);
@@ -2821,6 +2889,54 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #second-section .crusader .item h4 {
   font-weight: 700;
   margin-bottom: 25px;
+}
+
+#fifth-section {
+  margin-top: 100px;
+  height: 700px;
+  background-color: #f4f7fc;
+}
+
+#fifth-section .process {
+  margin-top: 100px;
+}
+
+#fifth-section .process .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#fifth-section .process .item .icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+#fifth-section .process .item .icon i,
+#fifth-section .process .item .icon span {
+  color: #437eeb;
+}
+
+#fifth-section .process .item .icon span {
+  position: absolute;
+  bottom: 55px;
+  right: 135px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  font-size: 14px;
 }
 
 #sixth-section::after {
@@ -2902,6 +3018,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 60px;
   text-align: center;
   color: black;
+  font-weight: 600;
+  line-height: 27px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  border-radius: 5px;
+}
+
+#eighth-section .head-item .item .info {
+  padding: 30px;
+  padding-top: 55px;
+}
+
+#eighth-section .head-item .item .info a {
+  margin-top: 12px;
 }
 
 #eighth-section .head-item .item .info .meta {
@@ -2912,14 +3042,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-family: monospace;
 }
 
-#fifth-section .testimonial .item {
+#testimonial-section .testimonial .item {
   height: 30rem;
   background: whitesmoke;
   padding: 1rem;
   line-height: 70px;
 }
 
-#fifth-section .testimonial .item span::after {
+#testimonial-section .testimonial .item span::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -2928,6 +3058,69 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-radius: 50%;
   padding: 30px;
   background-color: yellowgreen;
+}
+
+#range .body .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#range .body .items .box {
+  -webkit-box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+          box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+  padding: 50px 30px;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#range .body .items .box .item {
+  margin-top: 80px;
+}
+
+#range .body .items .box .item img {
+  max-width: 110px;
+}
+
+#third-section .center-tabs ul {
+  text-align: center;
+  list-style: none;
+}
+
+#third-section .center-tabs ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#third-section .center-tabs ul li a {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#third-section .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fourth-section {
+  height: 400px;
+  background: url("http://thememine.net/themeforest/anada/assets/img/map.svg");
+}
+
+#fourth-section h1 {
+  color: #437eeb;
 }
 
 #standart-footer {
@@ -3283,6 +3476,33 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #services .services-content img {
   max-width: 95%;
+}
+
+#services .icon-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#connection {
+  position: relative;
+  height: 500px;
+}
+
+#connection .connection-items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#connection form .form-group .name {
+  width: 810px;
+}
+
+#connection form .form-group input {
+  width: 350px;
 }
 
 #foot {

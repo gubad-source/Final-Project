@@ -1,3 +1,9 @@
+// overflow has been hidden horizontally
+
+body{
+  overflow-x: hidden;
+}
+
 #first-section {
   background: linear-gradient(
     90deg,
@@ -46,7 +52,7 @@
   .crusader .item {
     height: 20rem;
     padding: 1rem;
-    
+
     border-bottom: 3px solid #437eeb;
     box-shadow: 0 0 10px #cccccc;
     background: #ffffff;
@@ -58,6 +64,39 @@
     h4 {
       font-weight: 700;
       margin-bottom: 25px;
+    }
+  }
+}
+//// cards have been created but there is still problems such as downloading flaticon
+#fifth-section {
+  margin-top: 100px;
+  height: 700px;
+  background-color: $secondary-color;
+  .process {
+    margin-top: 100px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      .icon {
+        i,
+        span {
+          color: $primary-color;
+        }
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        span {
+          position: absolute;
+          bottom: 55px;
+          right: 135px;
+          background-color: white;
+          border-radius: 50%;
+          padding: 3px;
+          box-shadow: 0 0 10px #cccccc;
+          font-size: 14px;
+        }
+      }
     }
   }
 }
@@ -121,10 +160,19 @@
             width: 60px;
             text-align: center;
             color: black;
+            font-weight: 600;
+            line-height: 27px;
+            box-shadow: 0 0 10px #cccccc;
+            border-radius: 5px;
           }
         }
       }
       .info {
+        padding: 30px;
+        padding-top: 55px;
+        a {
+          margin-top: 12px;
+        }
         .meta {
           margin-top: 50px;
           p {
@@ -136,25 +184,86 @@
   }
 }
 
-#fifth-section{
+#testimonial-section {
   .testimonial .item {
     height: 30rem;
     background: whitesmoke;
     padding: 1rem;
     line-height: 70px;
-    
-      span::after{
-        content:"";
-        position: absolute;
-        top: 10px;
-        left: 540px;
-        opacity: 0.3;
-        border-radius:50%;
-        padding: 30px;
-        background-color: yellowgreen;
-      }
-    
-   
+
+    span::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 540px;
+      opacity: 0.3;
+      border-radius: 50%;
+      padding: 30px;
+      background-color: yellowgreen;
+    }
   }
-  
+}
+
+///cards has been created
+#range {
+  .body {
+    .items {
+      display: flex;
+      .box {
+        box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+        padding: 50px 30px;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 5px;
+        .item {
+          margin-top: 80px;
+
+          img {
+            max-width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+// isotope type mechanism has been added from bootstrap
+#third-section {
+  .center-tabs {
+    ul {
+      text-align: center;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        a {
+          display: block;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 25px;
+          position: relative;
+          z-index: 1;
+          background: linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
+          color: #ffffff;
+          text-decoration: none;
+         
+        }
+       
+      }
+    }
+  }
+  .tab{
+    display: flex;
+  }
+}
+
+// counter js plugin has been added
+#fourth-section{
+  height: 400px;
+  background: url('http://thememine.net/themeforest/anada/assets/img/map.svg');
+  h1{
+    color: $primary-color;
+  }
 }
