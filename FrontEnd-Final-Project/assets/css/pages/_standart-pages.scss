@@ -38,8 +38,10 @@
   }
 }
 #standart-section {
+  
   background-color: $secondary-color;
   margin-top: 100px;
+  
   .heading {
     font-family: sans-serif;
     margin-bottom: 50px;
@@ -51,16 +53,23 @@
     }
   }
   .head-item {
+    width: 800px;
+    
     .item {
+     
       box-shadow: 0 0 10px #cccccc;
       background: #ffffff;
       border-radius: 10px;
+      padding: 20px;
       .thumb {
+        img{
+          width: auto;
+        }
         a {
           position: relative;
           span {
             position: absolute;
-            top: 286px;
+            top: 250px;
             left: 40px;
             width: 105px;
             text-align: center;
@@ -76,6 +85,7 @@
         }
       }
       .info {
+        
         margin-top: 50px;
         .meta {
           margin-top: 50px;
@@ -86,6 +96,23 @@
             }
           }
         }
+      }
+    }
+  }
+}
+#pagination{
+  .navigation{
+    .pagination{
+      .page-item{
+        line-height: 1.25;
+        color: green;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        display: inline-block;
+        padding: 15px 20px;
+        margin: 5px;
+        margin-bottom: 0;
+        border-radius: 10px;
       }
     }
   }

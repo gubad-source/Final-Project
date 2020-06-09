@@ -1,6 +1,6 @@
 // overflow has been hidden horizontally
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -130,7 +130,7 @@ body{
     }
   }
 }
-
+// buttons have been changed with the help of after and hover effect
 #eighth-section {
   background-color: $secondary-color;
   margin-top: 100px;
@@ -172,6 +172,26 @@ body{
         padding-top: 55px;
         a {
           margin-top: 12px;
+          position: relative;
+          &::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.25s ease-in-out;
+          }
+        }
+        a:hover{
+          color: white;
+          text-decoration: none;
+          &::after{
+            opacity: 1;
+          }
         }
         .meta {
           margin-top: 50px;
@@ -204,7 +224,7 @@ body{
   }
 }
 
-///cards has been created
+///cards has been changed with the help of after and hover effect
 #range {
   .body {
     .items {
@@ -217,12 +237,30 @@ body{
         z-index: 1;
         overflow: hidden;
         border-radius: 5px;
+        &::after {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+          opacity: 0;
+          z-index: -1;
+          transition: all 0.25s ease-in-out;
+        }
         .item {
           margin-top: 80px;
 
           img {
             max-width: 110px;
           }
+        }
+      }
+      .box:hover {
+        color: white;
+        &::after {
+          opacity: 1;
         }
       }
     }
@@ -245,25 +283,29 @@ body{
           padding: 10px 25px;
           position: relative;
           z-index: 1;
-          background: linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
+          background: linear-gradient(
+            90deg,
+            rgba(30, 85, 189, 1) 0%,
+            rgba(67, 126, 235, 1) 100%
+          );
           color: #ffffff;
           text-decoration: none;
-         
         }
-       
       }
     }
   }
-  .tab{
+  .tab {
     display: flex;
   }
 }
 
 // counter js plugin has been added
-#fourth-section{
+#fourth-section {
   height: 400px;
-  background: url('http://thememine.net/themeforest/anada/assets/img/map.svg');
-  h1{
+  background: url("http://thememine.net/themeforest/anada/assets/img/map.svg");
+ 
+  
+  h1 {
     color: $primary-color;
   }
 }

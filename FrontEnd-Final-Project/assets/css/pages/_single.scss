@@ -1,72 +1,105 @@
 #blog-content {
+  margin-top: 50px;
   .item {
-      width:70%;
-     
+    width: 70%;
+
     .thumb {
       a {
         img {
+          border-radius: 10px;
           position: relative;
-        
         }
         .date {
+          color: black;
           position: absolute;
-          bottom: -25px;
-          left: 100px;
-          background-color: white;
-          width: 70px;
+          left: 50px;
+          bottom: -30px;
+          text-align: center;
+          background: #ffffff;
+          padding: 15px 30px;
+          text-transform: capitalize;
+          font-weight: 600;
+          line-height: 27px;
+          box-shadow: 0 0 10px #cccccc;
+          border-radius: 5px;
         }
       }
     }
-    .info{
-        
-    .meta{
-        ul{
-            list-style: none;
-            margin-top: 30px;
-            li{
-                display: inline-block;
-            }
+    .info {
+      .meta {
+        ul {
+          list-style: none;
+          margin-top: 30px;
+          line-height: 35px;
+          li {
+            display: inline-block;
+          }
         }
+      }
     }
+  }
+  
+}
+.post-tags {
+  margin-top: 30px;
+  height: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  .tags{
+    a{
+      background: #f7f7f7;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    }
+  }
+  .social {
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 5px;
+    }
+    .facebook{
+      color: #3B5998;
+    }
+    .pinterest{
+      color: #BD081C;
+    }
+    .linkedin{
+      color: #0077B5;
     }
   }
 }
-#blog-comment{
-  .comment-item{
+
+#blog-comment {
+  .comment-item {
     display: flex;
   }
-  img{
+  img {
     width: 100px;
   }
-  .title{
+  .title {
     display: flex;
     flex-wrap: nowrap;
   }
 
-.post-tags{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  .social{
-    li{
-      display: inline-block;
-      list-style: none;
-      margin:5px;
+  .inputs {
+    display: flex;
+    margin-bottom: 20px;
+    input {
+      height: 66px;
+      width: 266px;
+      border-color: #e7e7e7;
+      border-image: none;
+      border-radius: inherit;
+      border-style: none none solid;
+      border-width: medium medium 1px;
+      box-shadow: inherit;
     }
     
   }
-}
-
-  .inputs{
-    display: flex;
-    margin-bottom: 20px;
-    input{
-      height: 66px;
-      width: 266px;
-      border: none;
-      border-bottom: 1px solid black;
-    }
-  }
-
-
 }
