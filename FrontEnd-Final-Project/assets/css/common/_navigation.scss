@@ -12,6 +12,12 @@
     }
     .nav {
       margin-left: 300px;
+      .hamburger{
+        position: absolute;
+        top: 30px;
+    right: -100px;
+    cursor: pointer;
+      }
 
       .dropdown {
         margin-top: 30px;
@@ -19,12 +25,11 @@
         display: inline-block;
         margin-left: 25px;
         cursor: pointer;
-        &:hover .dropdown-content{
-            display: block;
+        &:hover .dropdown-content {
+          display: block;
         }
-        &:hover p{
-            color: $primary-color;
-
+        &:hover p {
+          color: $primary-color;
         }
       }
 
@@ -53,9 +58,52 @@
           }
         }
       }
-
-      
-     
+      // sidebar have been created
+      .sidebar{
+        width: 422px;
+        height: 1000px;
+        background-color: white;
+        opacity:1;
+        z-index: 3;
+        overflow-y: auto;
+        .close{
+          cursor: pointer;
+        }
+        .widget{
+          margin-top: 40px;
+          margin-left: 40px;
+          li{
+            line-height: 40px;
+            list-style: none;
+          }
+          .icon-info{
+            display: flex;
+            
+            i{
+              color: $primary-color;
+              margin-right: 15px;
+              margin-top:15px ;
+            }
+          }
+        }
+        .widget-social{
+          ul{
+            display: flex;
+            flex-wrap: nowrap;
+            li{
+              margin: 10px;
+              list-style: none;
+             i{
+               padding: 10px;
+               border-radius: 5px;
+               color: white;
+             }
+            }
+          }
+          
+        }
+        
+      }
     }
   }
 }

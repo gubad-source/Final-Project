@@ -2780,6 +2780,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   margin-left: 300px;
 }
 
+#header .anada-navigation .nav .hamburger {
+  position: absolute;
+  top: 30px;
+  right: -100px;
+  cursor: pointer;
+}
+
 #header .anada-navigation .nav .dropdown {
   margin-top: 30px;
   position: relative;
@@ -2825,6 +2832,60 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #header .anada-navigation .nav .dropdown-content li a:hover {
   text-decoration: none;
   color: #437eeb;
+}
+
+#header .anada-navigation .nav .sidebar {
+  width: 422px;
+  height: 1000px;
+  background-color: white;
+  opacity: 1;
+  z-index: 3;
+  overflow-y: auto;
+}
+
+#header .anada-navigation .nav .sidebar .close {
+  cursor: pointer;
+}
+
+#header .anada-navigation .nav .sidebar .widget {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#header .anada-navigation .nav .sidebar .widget li {
+  line-height: 40px;
+  list-style: none;
+}
+
+#header .anada-navigation .nav .sidebar .widget .icon-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .anada-navigation .nav .sidebar .widget .icon-info i {
+  color: #437eeb;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+#header .anada-navigation .nav .sidebar .widget-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#header .anada-navigation .nav .sidebar .widget-social ul li {
+  margin: 10px;
+  list-style: none;
+}
+
+#header .anada-navigation .nav .sidebar .widget-social ul li i {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
 body {
@@ -3779,6 +3840,27 @@ body {
           box-shadow: inherit;
   padding: 0;
   color: #232323;
+}
+
+#services2 {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#023ba6), to(#437eeb));
+  background-image: linear-gradient(90deg, #023ba6 0%, #437eeb 100%);
+  background-color: #437eeb;
+  color: white;
+}
+
+#services2 .info {
+  margin-top: 100px;
+}
+
+#services2 img {
+  width: 130%;
 }
 
 #foot {

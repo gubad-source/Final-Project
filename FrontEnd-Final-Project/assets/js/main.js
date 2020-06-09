@@ -16,17 +16,14 @@ $(document).ready(function () {
     });
 
 
+$(".hamburger").click(function(){
+    $(".sidebar").removeClass("d-none")
+})
+$(".close").click(function(){
+    $(".sidebar").addClass("d-none")
+})
+    
 
-    if ($('#third-section .tab-grid').length) {
-        var $grid = $('#courses .courses').isotope({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-        });
-
-        $('#tabs li').on('click', 'button', function () {
-            
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
-    }
+    
 });
+
