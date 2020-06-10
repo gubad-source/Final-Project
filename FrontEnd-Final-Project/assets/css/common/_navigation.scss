@@ -59,14 +59,15 @@
         }
       }
       // sidebar have been created
+
+     
       .sidebar{
         width: 422px;
-          height: 1000px;
-          background-color: white;
-          opacity:1;
-          z-index: 3;
-          overflow-y: auto;
-       
+        height: 1000px;
+            background-color: white;
+            opacity:1;
+            z-index: 3;
+            overflow-y: auto;
         .close{
           cursor: pointer;
           
@@ -106,6 +107,7 @@
         }
         
       }
+     
     }
   }
 }

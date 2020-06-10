@@ -2,6 +2,16 @@
 
 body {
   overflow-x: hidden;
+  .loader{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
 }
 
 #first-section {
@@ -216,6 +226,8 @@ body {
     top: -60px;
    
     -webkit-animation: spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite ;
+    animation: spin 3s linear infinite;
   }
   .body {
     .items {
@@ -301,8 +313,15 @@ body {
     color: $primary-color;
   }
 }
-
+///animatin keyframes have been improved
 @-webkit-keyframes spin{
   100%{-webkit-transform: rotate(360deg);
   }
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg)};
 }

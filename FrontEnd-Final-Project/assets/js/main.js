@@ -15,14 +15,19 @@ $(document).ready(function () {
         wowAnimation();
     });
 
-
+///Sidebar have been added last night
 $(".hamburger").click(function(){
-    $(".sidebar").removeClass("d-none")
+    $(".sidebar.d-none").removeClass("d-none")
 })
 $(".close").click(function(){
     $(".sidebar").addClass("d-none")
 })
-    
+
+///loader have been added
+ $(window).on('load', function () {
+    $(".loader").addClass("d-none")
+});
+
 
     
 });
