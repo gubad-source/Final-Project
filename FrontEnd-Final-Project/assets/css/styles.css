@@ -3016,6 +3016,7 @@ body .loader {
 }
 
 #fifth-section .process .item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3023,6 +3024,13 @@ body .loader {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#fifth-section .process .item img {
+  position: absolute;
+  width: 300px;
+  top: -2%;
+  right: -45%;
 }
 
 #fifth-section .process .item .icon {
@@ -3072,6 +3080,19 @@ body .loader {
 
 #sixth-section .skill-items .image-box {
   position: relative;
+}
+
+#sixth-section .skill-items .image-box::after {
+  position: absolute;
+  right: -175px;
+  top: 116px;
+  height: 500px;
+  width: 500px;
+  border: 50px solid #437eeb;
+  content: "";
+  z-index: -2;
+  opacity: 0.07;
+  border-radius: 50%;
 }
 
 #sixth-section .skill-items .image-box .image1 {
@@ -3645,20 +3666,6 @@ body .loader {
           transform: rotate(45deg);
   z-index: -1;
   border-radius: 5px;
-}
-
-#about-us {
-  color: white;
-}
-
-#about-us .header {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-align: center;
-}
-
-#about-us .header p {
-  margin-right: 40px;
 }
 
 #blog-content {

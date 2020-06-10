@@ -1,6 +1,5 @@
 #about-footer {
   margin-top: 10%;
-  
 
   li {
     list-style: none;
@@ -48,26 +47,27 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    &::before{
+    &::before {
       position: absolute;
-    right: -50px;
-    top: -50px;
-    content: "";
-    height: 150px;
-    width: 150px;
-    background: rgba(255, 255, 155, 0.1);
-    border-radius: 50%;
-    transition: all 0.35s ease-in-out;
-    } &::after{
+      right: -50px;
+      top: -50px;
+      content: "";
+      height: 150px;
+      width: 150px;
+      background: rgba(255, 255, 155, 0.1);
+      border-radius: 50%;
+      transition: all 0.35s ease-in-out;
+    }
+    &::after {
       position: absolute;
-    right: -50px;
-    top: -50px;
-    content: "";
-    height: 100px;
-    width: 100px;
-    background: rgba(255, 255, 155, 0.1);
-    border-radius: 50%;
-    transition: all 0.35s ease-in-out;
+      right: -50px;
+      top: -50px;
+      content: "";
+      height: 100px;
+      width: 100px;
+      background: rgba(255, 255, 155, 0.1);
+      border-radius: 50%;
+      transition: all 0.35s ease-in-out;
     }
 
     ul {
@@ -134,7 +134,6 @@
   }
 }
 
-
 .skill-items {
   display: flex;
   flex-wrap: nowrap;
@@ -161,7 +160,7 @@
     }
   }
 }
-#about-1{
+#about-1 {
   &::after {
     position: absolute;
     right: 0;
@@ -173,54 +172,40 @@
     z-index: -1;
     opacity: 0.08;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(90deg);}
-  ul{
-    li{
-      padding:10px;
+    transform: rotate(90deg);
+  }
+  ul {
+    li {
+      padding: 10px;
       background-color: whitesmoke;
       list-style: none;
       display: block;
-    margin-bottom: 15px;
-    font-weight: 500;
-    color: #666666;
-      i{
+      margin-bottom: 15px;
+      font-weight: 500;
+      color: #666666;
+      i {
         line-height: 35px;
         position: relative;
-    z-index: 1;
-    color: #437eeb;
-    display: inline-block;
-    margin-right: 25px;
-    padding-left: 8px;
-    font-size: 14px;
-    top: 0;
-    &::after{
-      position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    height: 30px;
-    width: 30px;
-    background: #edf5ff none repeat scroll 0 0;
-    transform: rotate(45deg);
-    z-index: -1;
-    border-radius: 5px;
-    }
+        z-index: 1;
+        color: #437eeb;
+        display: inline-block;
+        margin-right: 25px;
+        padding-left: 8px;
+        font-size: 14px;
+        top: 0;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "";
+          height: 30px;
+          width: 30px;
+          background: #edf5ff none repeat scroll 0 0;
+          transform: rotate(45deg);
+          z-index: -1;
+          border-radius: 5px;
+        }
       }
     }
-  }
-}
-#about-us{
-  // background: url('http://thememine.net/themeforest/anada/assets/img/shape/1.png');
-  // background-repeat: no-repeat;
- 
- color: white;
-  .header{
-    margin-top:10%;
-    margin-bottom:10%;
-  text-align: center;
-  p{
-    margin-right: 40px;
-  }
-    
   }
 }
