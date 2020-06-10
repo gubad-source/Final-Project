@@ -17,6 +17,7 @@
     cursor: pointer;
     border-radius: 30px
 }
+///sliding color effect has beeen added to this button variable
 .btn-ordinary{
     display: inline-block;
     border: 1px solid #e7e7e7;
@@ -27,11 +28,33 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        height: 100%;
+       width: 0%;
+        background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+        opacity: 0;
+        z-index: -1;  
+        transition: all .7s ease-in-out;
+      }
+     
     a {
         text-decoration: none;
         font-family: "Nunito", sans-serif;
       }
 }
+
+.btn-ordinary:hover{
+    color: white;
+    text-decoration: none;
+    &::after{
+        width: 100%;
+      opacity: 1;
+    }
+  }
 .btn-reply{
     border: 1px solid #e7e7e7;
     color: #002359;

@@ -32,9 +32,34 @@
   overflow: hidden;
 }
 
+.btn-ordinary::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 0%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#437eeb), to(#093ac1));
+  background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
 .btn-ordinary a {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+}
+
+.btn-ordinary:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-ordinary:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 .btn-reply {
@@ -3107,30 +3132,6 @@ body {
   position: relative;
 }
 
-#eighth-section .head-item .item .info a::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#437eeb), to(#093ac1));
-  background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-#eighth-section .head-item .item .info a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-#eighth-section .head-item .item .info a:hover::after {
-  opacity: 1;
-}
-
 #eighth-section .head-item .item .info .meta {
   margin-top: 50px;
 }
@@ -3157,6 +3158,17 @@ body {
   background-color: yellowgreen;
 }
 
+#range {
+  position: relative;
+}
+
+#range .image {
+  position: absolute;
+  right: 30px;
+  top: -60px;
+  -webkit-animation: spin 3s linear infinite;
+}
+
 #range .body .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3179,7 +3191,7 @@ body {
   left: 0;
   bottom: 0;
   content: "";
-  height: 100%;
+  height: 0%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#437eeb), to(#093ac1));
   background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
@@ -3202,6 +3214,7 @@ body {
 }
 
 #range .body .items .box:hover::after {
+  height: 100%;
   opacity: 1;
 }
 
@@ -3241,6 +3254,12 @@ body {
 
 #fourth-section h1 {
   color: #437eeb;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 #standart-footer {

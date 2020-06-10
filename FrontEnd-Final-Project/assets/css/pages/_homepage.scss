@@ -173,25 +173,6 @@ body {
         a {
           margin-top: 12px;
           position: relative;
-          &::after {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
-            opacity: 0;
-            z-index: -1;
-            transition: all 0.25s ease-in-out;
-          }
-        }
-        a:hover{
-          color: white;
-          text-decoration: none;
-          &::after{
-            opacity: 1;
-          }
         }
         .meta {
           margin-top: 50px;
@@ -225,7 +206,17 @@ body {
 }
 
 ///cards has been changed with the help of after and hover effect
+///spining circle image has been added
+///Sliding overlay has been added to
 #range {
+  position: relative;
+  .image{
+    position: absolute;
+    right: 30px;
+    top: -60px;
+   
+    -webkit-animation: spin 3s linear infinite;
+  }
   .body {
     .items {
       display: flex;
@@ -242,7 +233,7 @@ body {
           left: 0;
           bottom: 0;
           content: "";
-          height: 100%;
+          height: 0%;
           width: 100%;
           background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
           opacity: 0;
@@ -260,6 +251,7 @@ body {
       .box:hover {
         color: white;
         &::after {
+          height: 100%;
           opacity: 1;
         }
       }
@@ -307,5 +299,10 @@ body {
   
   h1 {
     color: $primary-color;
+  }
+}
+
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);
   }
 }
