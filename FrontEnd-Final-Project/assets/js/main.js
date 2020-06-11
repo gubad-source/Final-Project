@@ -1,4 +1,28 @@
 $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+       margin:20,
+    stagePadding: 50,
+        nav:true,
+        loop:false,
+        dots:true,
+        
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        },
+        // autoplay:true,
+        // autoplayTimeout:2000,
+        // autoplayHoverPause:true
+
+    })
     function wowAnimation() {
         var wow = new WOW({
             boxClass: 'wow',
