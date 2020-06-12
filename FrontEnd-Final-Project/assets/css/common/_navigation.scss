@@ -25,6 +25,7 @@
         display: inline-block;
         margin-left: 25px;
         cursor: pointer;
+       
         &:hover .dropdown-content {
           display: block;
         }

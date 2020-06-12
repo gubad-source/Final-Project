@@ -103,3 +103,9 @@
     
   }
 }
+
+// # main-content4 have been extended from #main-content just to make code shorter and flexible
+#main-content4{
+
+  @extend #main-content
+}

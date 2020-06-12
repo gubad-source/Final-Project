@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     $('.owl-carousel').owlCarousel({
         loop:true,
        margin:20,
@@ -53,6 +54,9 @@ $(".close").click(function(){
 });
 
 
-    
-});
 
+});
+////slide with eye-icon have been added 
+$(".services-content .topic .title").click(function(){
+    $(this).children().eq(1).toggleClass("fas fa-2x fa-eye-slash mt-2").toggleClass("fas fa-2x fa-eye mt-2")
+   $(this).next() .slideToggle()})

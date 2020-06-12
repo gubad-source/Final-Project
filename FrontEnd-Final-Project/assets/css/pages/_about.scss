@@ -209,3 +209,7 @@
     }
   }
 }
+// # main-content 2 have been extended from #main content to shorten the code
+#main-content2{
+  @extend #main-content
+}
