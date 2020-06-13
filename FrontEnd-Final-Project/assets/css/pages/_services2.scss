@@ -74,7 +74,15 @@ ul{
         opacity: 1;
       }
 }
-
+#range-section{
+  @extend #fifth-section
+}
+#foot4{
+  @extend #foot
+}
+#header5{
+  @extend #header
+}
 @-webkit-keyframes spin{
     100%{-webkit-transform: rotate(360deg);
     }

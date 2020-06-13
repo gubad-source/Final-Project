@@ -40,13 +40,7 @@ $(document).ready(function () {
         wowAnimation();
     });
 
-///Sidebar have been added last night
-$(".hamburger").click(function(){
-    $(".sidebar.d-none").removeClass("d-none")
-})
-$(".close").click(function(){
-    $(".sidebar").addClass("d-none")
-})
+
 
 ///loader have been added
  $(window).on('load', function () {
@@ -60,3 +54,15 @@ $(".close").click(function(){
 $(".services-content .topic .title").click(function(){
     $(this).children().eq(1).toggleClass("fas fa-2x fa-eye-slash mt-2").toggleClass("fas fa-2x fa-eye mt-2")
    $(this).next() .slideToggle()})
+
+   $(".search").click(function(){
+       $(".search-drop").slideToggle("slow")
+   })
+   ///Sidebar have been added last night
+$(".hamburger").click(function(){
+    
+    $(".sidebar.d-none").removeClass("d-none")
+})
+$(".close").click(function(){
+    $(".sidebar").addClass("d-none")
+})

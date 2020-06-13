@@ -240,6 +240,7 @@ body {
 ///cards has been changed with the help of after and hover effect
 ///spining circle image has been added
 ///Sliding overlay has been added to
+
 #range {
   position: relative;
   .image{
@@ -295,7 +296,11 @@ body {
 // isotope type mechanism has been added from bootstrap
 #third-section {
   .center-tabs {
+   
+    // flexbox option has been given to ul in order to center the tabs
     ul {
+      display: flex;
+      justify-content: center;
       text-align: center;
       list-style: none;
 
@@ -330,8 +335,9 @@ body {
   height: 400px;
   background: url("http://thememine.net/themeforest/anada/assets/img/map.svg");
  
-  
+  ///margin to the top have been added
   h1 {
+    margin-top: 50%;
     color: $primary-color;
   }
 }

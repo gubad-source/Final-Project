@@ -1,10 +1,12 @@
 #header {
+  
   .anada-navigation {
     height: 80px;
     position: fixed;
     z-index: 3;
 
     img {
+      width: 200px;
       height: 80px;
       position: absolute;
       top: 0;
@@ -12,12 +14,33 @@
     }
     .nav {
       margin-left: 300px;
-      .hamburger{
+      .search {
+        
         position: absolute;
         top: 30px;
-    right: -100px;
-    cursor: pointer;
+        right: -100px;
+        cursor: pointer;
       }
+      
+      .hamburger {
+        position: absolute;
+        top: 30px;
+        right: -60px;
+        cursor: pointer;
+      }
+      .search-drop {
+       
+         position: absolute;
+         top: 75px;
+         right: -100px;
+         display: flex;
+         background-color: green;
+         padding: 15px;
+         border-radius: 35%;
+         h6 {
+           margin-right: 150px;
+         }
+       }
 
       .dropdown {
         margin-top: 30px;
@@ -25,7 +48,7 @@
         display: inline-block;
         margin-left: 25px;
         cursor: pointer;
-       
+
         &:hover .dropdown-content {
           display: block;
         }
@@ -61,54 +84,53 @@
       }
       // sidebar have been created
 
-     
-      .sidebar{
-        width: 422px;
+      .sidebar {
+        
+        width: 436px;
         height: 1000px;
-            background-color: white;
-            opacity:1;
-            z-index: 3;
-            overflow-y: auto;
-        .close{
+        background-color: white;
+        opacity: 1;
+        z-index: 3;
+        overflow-y: auto;
+        .close {
           cursor: pointer;
-          
         }
-        .widget{
+        .widget {
           margin-top: 40px;
           margin-left: 40px;
-          li{
+          li {
             line-height: 40px;
             list-style: none;
           }
-          .icon-info{
+          .icon-info {
             display: flex;
-            
-            i{
+
+            i {
               color: $primary-color;
               margin-right: 15px;
-              margin-top:15px ;
+              margin-top: 15px;
             }
           }
         }
-        .widget-social{
-          ul{
+        .widget-social {
+          ul {
             display: flex;
             flex-wrap: nowrap;
-            li{
+            li {
               margin: 10px;
               list-style: none;
-             i{
-               padding: 10px;
-               border-radius: 5px;
-               color: white;
-             }
+              i {
+                padding: 10px;
+                border-radius: 5px;
+                color: white;
+              }
             }
           }
-          
         }
-        
       }
-     
     }
   }
 }
+
+
+

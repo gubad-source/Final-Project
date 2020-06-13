@@ -2788,31 +2788,55 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: zoomOutUp;
 }
 
-#header .anada-navigation {
+#header .anada-navigation, #header7 .anada-navigation, #header2 .anada-navigation, #header6 .anada-navigation, #header4 .anada-navigation, #header3 .anada-navigation, #header5 .anada-navigation {
   height: 80px;
   position: fixed;
   z-index: 3;
 }
 
-#header .anada-navigation img {
+#header .anada-navigation img, #header7 .anada-navigation img, #header2 .anada-navigation img, #header6 .anada-navigation img, #header4 .anada-navigation img, #header3 .anada-navigation img, #header5 .anada-navigation img {
+  width: 200px;
   height: 80px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#header .anada-navigation .nav {
+#header .anada-navigation .nav, #header7 .anada-navigation .nav, #header2 .anada-navigation .nav, #header6 .anada-navigation .nav, #header4 .anada-navigation .nav, #header3 .anada-navigation .nav, #header5 .anada-navigation .nav {
   margin-left: 300px;
 }
 
-#header .anada-navigation .nav .hamburger {
+#header .anada-navigation .nav .search, #header7 .anada-navigation .nav .search, #header2 .anada-navigation .nav .search, #header6 .anada-navigation .nav .search, #header4 .anada-navigation .nav .search, #header3 .anada-navigation .nav .search, #header5 .anada-navigation .nav .search {
   position: absolute;
   top: 30px;
   right: -100px;
   cursor: pointer;
 }
 
-#header .anada-navigation .nav .dropdown {
+#header .anada-navigation .nav .hamburger, #header7 .anada-navigation .nav .hamburger, #header2 .anada-navigation .nav .hamburger, #header6 .anada-navigation .nav .hamburger, #header4 .anada-navigation .nav .hamburger, #header3 .anada-navigation .nav .hamburger, #header5 .anada-navigation .nav .hamburger {
+  position: absolute;
+  top: 30px;
+  right: -60px;
+  cursor: pointer;
+}
+
+#header .anada-navigation .nav .search-drop, #header7 .anada-navigation .nav .search-drop, #header2 .anada-navigation .nav .search-drop, #header6 .anada-navigation .nav .search-drop, #header4 .anada-navigation .nav .search-drop, #header3 .anada-navigation .nav .search-drop, #header5 .anada-navigation .nav .search-drop {
+  position: absolute;
+  top: 75px;
+  right: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: green;
+  padding: 15px;
+  border-radius: 35%;
+}
+
+#header .anada-navigation .nav .search-drop h6, #header7 .anada-navigation .nav .search-drop h6, #header2 .anada-navigation .nav .search-drop h6, #header6 .anada-navigation .nav .search-drop h6, #header4 .anada-navigation .nav .search-drop h6, #header3 .anada-navigation .nav .search-drop h6, #header5 .anada-navigation .nav .search-drop h6 {
+  margin-right: 150px;
+}
+
+#header .anada-navigation .nav .dropdown, #header7 .anada-navigation .nav .dropdown, #header2 .anada-navigation .nav .dropdown, #header6 .anada-navigation .nav .dropdown, #header4 .anada-navigation .nav .dropdown, #header3 .anada-navigation .nav .dropdown, #header5 .anada-navigation .nav .dropdown {
   margin-top: 30px;
   position: relative;
   display: inline-block;
@@ -2820,15 +2844,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   cursor: pointer;
 }
 
-#header .anada-navigation .nav .dropdown:hover .dropdown-content {
+#header .anada-navigation .nav .dropdown:hover .dropdown-content, #header7 .anada-navigation .nav .dropdown:hover .dropdown-content, #header2 .anada-navigation .nav .dropdown:hover .dropdown-content, #header6 .anada-navigation .nav .dropdown:hover .dropdown-content, #header4 .anada-navigation .nav .dropdown:hover .dropdown-content, #header3 .anada-navigation .nav .dropdown:hover .dropdown-content, #header5 .anada-navigation .nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-#header .anada-navigation .nav .dropdown:hover p {
+#header .anada-navigation .nav .dropdown:hover p, #header7 .anada-navigation .nav .dropdown:hover p, #header2 .anada-navigation .nav .dropdown:hover p, #header6 .anada-navigation .nav .dropdown:hover p, #header4 .anada-navigation .nav .dropdown:hover p, #header3 .anada-navigation .nav .dropdown:hover p, #header5 .anada-navigation .nav .dropdown:hover p {
   color: #437eeb;
 }
 
-#header .anada-navigation .nav .dropdown-content {
+#header .anada-navigation .nav .dropdown-content, #header7 .anada-navigation .nav .dropdown-content, #header2 .anada-navigation .nav .dropdown-content, #header6 .anada-navigation .nav .dropdown-content, #header4 .anada-navigation .nav .dropdown-content, #header3 .anada-navigation .nav .dropdown-content, #header5 .anada-navigation .nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -2839,28 +2863,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   z-index: 1;
 }
 
-#header .anada-navigation .nav .dropdown-content li {
+#header .anada-navigation .nav .dropdown-content li, #header7 .anada-navigation .nav .dropdown-content li, #header2 .anada-navigation .nav .dropdown-content li, #header6 .anada-navigation .nav .dropdown-content li, #header4 .anada-navigation .nav .dropdown-content li, #header3 .anada-navigation .nav .dropdown-content li, #header5 .anada-navigation .nav .dropdown-content li {
   list-style: none;
   width: 180px;
 }
 
-#header .anada-navigation .nav .dropdown-content li:hover {
+#header .anada-navigation .nav .dropdown-content li:hover, #header7 .anada-navigation .nav .dropdown-content li:hover, #header2 .anada-navigation .nav .dropdown-content li:hover, #header6 .anada-navigation .nav .dropdown-content li:hover, #header4 .anada-navigation .nav .dropdown-content li:hover, #header3 .anada-navigation .nav .dropdown-content li:hover, #header5 .anada-navigation .nav .dropdown-content li:hover {
   cursor: pointer;
 }
 
-#header .anada-navigation .nav .dropdown-content li a {
+#header .anada-navigation .nav .dropdown-content li a, #header7 .anada-navigation .nav .dropdown-content li a, #header2 .anada-navigation .nav .dropdown-content li a, #header6 .anada-navigation .nav .dropdown-content li a, #header4 .anada-navigation .nav .dropdown-content li a, #header3 .anada-navigation .nav .dropdown-content li a, #header5 .anada-navigation .nav .dropdown-content li a {
   color: #666666;
   -webkit-transition: 0.7s all;
   transition: 0.7s all;
 }
 
-#header .anada-navigation .nav .dropdown-content li a:hover {
+#header .anada-navigation .nav .dropdown-content li a:hover, #header7 .anada-navigation .nav .dropdown-content li a:hover, #header2 .anada-navigation .nav .dropdown-content li a:hover, #header6 .anada-navigation .nav .dropdown-content li a:hover, #header4 .anada-navigation .nav .dropdown-content li a:hover, #header3 .anada-navigation .nav .dropdown-content li a:hover, #header5 .anada-navigation .nav .dropdown-content li a:hover {
   text-decoration: none;
   color: #437eeb;
 }
 
-#header .anada-navigation .nav .sidebar {
-  width: 422px;
+#header .anada-navigation .nav .sidebar, #header7 .anada-navigation .nav .sidebar, #header2 .anada-navigation .nav .sidebar, #header6 .anada-navigation .nav .sidebar, #header4 .anada-navigation .nav .sidebar, #header3 .anada-navigation .nav .sidebar, #header5 .anada-navigation .nav .sidebar {
+  width: 436px;
   height: 1000px;
   background-color: white;
   opacity: 1;
@@ -2868,33 +2892,33 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   overflow-y: auto;
 }
 
-#header .anada-navigation .nav .sidebar .close {
+#header .anada-navigation .nav .sidebar .close, #header7 .anada-navigation .nav .sidebar .close, #header2 .anada-navigation .nav .sidebar .close, #header6 .anada-navigation .nav .sidebar .close, #header4 .anada-navigation .nav .sidebar .close, #header3 .anada-navigation .nav .sidebar .close, #header5 .anada-navigation .nav .sidebar .close {
   cursor: pointer;
 }
 
-#header .anada-navigation .nav .sidebar .widget {
+#header .anada-navigation .nav .sidebar .widget, #header7 .anada-navigation .nav .sidebar .widget, #header2 .anada-navigation .nav .sidebar .widget, #header6 .anada-navigation .nav .sidebar .widget, #header4 .anada-navigation .nav .sidebar .widget, #header3 .anada-navigation .nav .sidebar .widget, #header5 .anada-navigation .nav .sidebar .widget {
   margin-top: 40px;
   margin-left: 40px;
 }
 
-#header .anada-navigation .nav .sidebar .widget li {
+#header .anada-navigation .nav .sidebar .widget li, #header7 .anada-navigation .nav .sidebar .widget li, #header2 .anada-navigation .nav .sidebar .widget li, #header6 .anada-navigation .nav .sidebar .widget li, #header4 .anada-navigation .nav .sidebar .widget li, #header3 .anada-navigation .nav .sidebar .widget li, #header5 .anada-navigation .nav .sidebar .widget li {
   line-height: 40px;
   list-style: none;
 }
 
-#header .anada-navigation .nav .sidebar .widget .icon-info {
+#header .anada-navigation .nav .sidebar .widget .icon-info, #header7 .anada-navigation .nav .sidebar .widget .icon-info, #header2 .anada-navigation .nav .sidebar .widget .icon-info, #header6 .anada-navigation .nav .sidebar .widget .icon-info, #header4 .anada-navigation .nav .sidebar .widget .icon-info, #header3 .anada-navigation .nav .sidebar .widget .icon-info, #header5 .anada-navigation .nav .sidebar .widget .icon-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#header .anada-navigation .nav .sidebar .widget .icon-info i {
+#header .anada-navigation .nav .sidebar .widget .icon-info i, #header7 .anada-navigation .nav .sidebar .widget .icon-info i, #header2 .anada-navigation .nav .sidebar .widget .icon-info i, #header6 .anada-navigation .nav .sidebar .widget .icon-info i, #header4 .anada-navigation .nav .sidebar .widget .icon-info i, #header3 .anada-navigation .nav .sidebar .widget .icon-info i, #header5 .anada-navigation .nav .sidebar .widget .icon-info i {
   color: #437eeb;
   margin-right: 15px;
   margin-top: 15px;
 }
 
-#header .anada-navigation .nav .sidebar .widget-social ul {
+#header .anada-navigation .nav .sidebar .widget-social ul, #header7 .anada-navigation .nav .sidebar .widget-social ul, #header2 .anada-navigation .nav .sidebar .widget-social ul, #header6 .anada-navigation .nav .sidebar .widget-social ul, #header4 .anada-navigation .nav .sidebar .widget-social ul, #header3 .anada-navigation .nav .sidebar .widget-social ul, #header5 .anada-navigation .nav .sidebar .widget-social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2902,12 +2926,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       flex-wrap: nowrap;
 }
 
-#header .anada-navigation .nav .sidebar .widget-social ul li {
+#header .anada-navigation .nav .sidebar .widget-social ul li, #header7 .anada-navigation .nav .sidebar .widget-social ul li, #header2 .anada-navigation .nav .sidebar .widget-social ul li, #header6 .anada-navigation .nav .sidebar .widget-social ul li, #header4 .anada-navigation .nav .sidebar .widget-social ul li, #header3 .anada-navigation .nav .sidebar .widget-social ul li, #header5 .anada-navigation .nav .sidebar .widget-social ul li {
   margin: 10px;
   list-style: none;
 }
 
-#header .anada-navigation .nav .sidebar .widget-social ul li i {
+#header .anada-navigation .nav .sidebar .widget-social ul li i, #header7 .anada-navigation .nav .sidebar .widget-social ul li i, #header2 .anada-navigation .nav .sidebar .widget-social ul li i, #header6 .anada-navigation .nav .sidebar .widget-social ul li i, #header4 .anada-navigation .nav .sidebar .widget-social ul li i, #header3 .anada-navigation .nav .sidebar .widget-social ul li i, #header5 .anada-navigation .nav .sidebar .widget-social ul li i {
   padding: 10px;
   border-radius: 5px;
   color: white;
@@ -3005,17 +3029,17 @@ body .loader {
   margin-bottom: 25px;
 }
 
-#fifth-section {
+#fifth-section, #range-section {
   margin-top: 100px;
   height: 700px;
   background-color: #f4f7fc;
 }
 
-#fifth-section .process {
+#fifth-section .process, #range-section .process {
   margin-top: 100px;
 }
 
-#fifth-section .process .item {
+#fifth-section .process .item, #range-section .process .item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3026,14 +3050,14 @@ body .loader {
           flex-direction: column;
 }
 
-#fifth-section .process .item img {
+#fifth-section .process .item img, #range-section .process .item img {
   position: absolute;
   width: 300px;
   top: -2%;
   right: -45%;
 }
 
-#fifth-section .process .item .icon {
+#fifth-section .process .item .icon, #range-section .process .item .icon {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3044,12 +3068,15 @@ body .loader {
   margin-bottom: 100px;
 }
 
-#fifth-section .process .item .icon i,
-#fifth-section .process .item .icon span {
+#fifth-section .process .item .icon i, #range-section .process .item .icon i,
+#fifth-section .process .item .icon span,
+#range-section .process .item .icon span {
   color: #437eeb;
 }
 
-#fifth-section .process .item .icon span {
+
+#fifth-section .process .item .icon span,
+#range-section .process .item .icon span {
   position: absolute;
   bottom: 55px;
   right: 135px;
@@ -3258,6 +3285,12 @@ body .loader {
 }
 
 #third-section .center-tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   list-style: none;
 }
@@ -3292,6 +3325,7 @@ body .loader {
 }
 
 #fourth-section h1 {
+  margin-top: 50%;
   color: #437eeb;
 }
 
@@ -4026,18 +4060,18 @@ body .loader {
   }
 }
 
-#foot {
+#foot, #foot5, #foot3, #foot2, #foot4 {
   margin-top: 10%;
   background: url("http://thememine.net/themeforest/anada/assets/img/shape/6.svg");
   background-size: cover;
 }
 
-#foot li {
+#foot li, #foot5 li, #foot3 li, #foot2 li, #foot4 li {
   list-style: none;
   line-height: 45px;
 }
 
-#foot .social {
+#foot .social, #foot5 .social, #foot3 .social, #foot2 .social, #foot4 .social {
   margin-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4047,7 +4081,7 @@ body .loader {
           justify-content: flex-start;
 }
 
-#foot .social i {
+#foot .social i, #foot5 .social i, #foot3 .social i, #foot2 .social i, #foot4 .social i {
   list-style: none;
   padding: 5px;
   display: inline-block;
@@ -4061,19 +4095,19 @@ body .loader {
   margin-right: 10px;
 }
 
-#foot .social .face {
+#foot .social .face, #foot5 .social .face, #foot3 .social .face, #foot2 .social .face, #foot4 .social .face {
   background-color: #6610f2;
 }
 
-#foot .social .twit {
+#foot .social .twit, #foot5 .social .twit, #foot3 .social .twit, #foot2 .social .twit, #foot4 .social .twit {
   background-color: #007bff;
 }
 
-#foot .social .insta {
+#foot .social .insta, #foot5 .social .insta, #foot3 .social .insta, #foot2 .social .insta, #foot4 .social .insta {
   background-color: #dc3545;
 }
 
-#foot .social .you {
+#foot .social .you, #foot5 .social .you, #foot3 .social .you, #foot2 .social .you, #foot4 .social .you {
   background-color: #343a40;
 }
 /*# sourceMappingURL=styles.css.map */
