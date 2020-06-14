@@ -86,7 +86,10 @@
 
       .sidebar {
         
-        width: 436px;
+        position: absolute;
+        right: -51%;
+        transition: .6s ;
+        width:0px;
         height: 1000px;
         background-color: white;
         opacity: 1;

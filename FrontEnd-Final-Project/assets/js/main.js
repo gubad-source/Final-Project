@@ -59,10 +59,17 @@ $(".services-content .topic .title").click(function(){
        $(".search-drop").slideToggle("slow")
    })
    ///Sidebar have been added last night
-$(".hamburger").click(function(){
+// $(".hamburger").click(function(){
     
-    $(".sidebar.d-none").removeClass("d-none")
-})
-$(".close").click(function(){
-    $(".sidebar").addClass("d-none")
-})
+//     $(".sidebar.d-none").removeClass("d-none")
+// })
+// $(".close").click(function(){
+//     $(".sidebar").addClass("d-none")
+// })
+
+function openNav(){
+    document.querySelector(".sidebar").style.width="436px"
+}
+function closeNav(){
+    document.querySelector(".sidebar").style.width="0"
+}

@@ -2884,7 +2884,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 #header .anada-navigation .nav .sidebar, #header7 .anada-navigation .nav .sidebar, #header2 .anada-navigation .nav .sidebar, #header6 .anada-navigation .nav .sidebar, #header4 .anada-navigation .nav .sidebar, #header3 .anada-navigation .nav .sidebar, #header5 .anada-navigation .nav .sidebar {
-  width: 436px;
+  position: absolute;
+  right: -51%;
+  -webkit-transition: .6s;
+  transition: .6s;
+  width: 0px;
   height: 1000px;
   background-color: white;
   opacity: 1;
