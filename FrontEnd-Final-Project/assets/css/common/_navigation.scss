@@ -2,9 +2,7 @@
   .hamburger2{
     display: none;
   }
-  .responsive{
-    display: none;
-  }
+ 
   .anada-navigation {
     height: 80px;
     position: fixed;
@@ -16,6 +14,8 @@
       position: absolute;
       top: 0;
       left: 0;
+      display: flex;
+      justify-content: center;
     }
     .nav {
       margin-left: 300px;
