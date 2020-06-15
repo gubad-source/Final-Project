@@ -2788,6 +2788,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: zoomOutUp;
 }
 
+#header .hamburger2, #header7 .hamburger2, #header2 .hamburger2, #header6 .hamburger2, #header4 .hamburger2, #header3 .hamburger2, #header5 .hamburger2 {
+  display: none;
+}
+
+#header .responsive, #header7 .responsive, #header2 .responsive, #header6 .responsive, #header4 .responsive, #header3 .responsive, #header5 .responsive {
+  display: none;
+}
+
 #header .anada-navigation, #header7 .anada-navigation, #header2 .anada-navigation, #header6 .anada-navigation, #header4 .anada-navigation, #header3 .anada-navigation, #header5 .anada-navigation {
   height: 80px;
   position: fixed;
@@ -2939,6 +2947,41 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 10px;
   border-radius: 5px;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  body #header .hamburger2, body #header7 .hamburger2, body #header2 .hamburger2, body #header6 .hamburger2, body #header4 .hamburger2, body #header3 .hamburger2, body #header5 .hamburger2 {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 12rem;
+  }
+  body #header .responsive, body #header7 .responsive, body #header2 .responsive, body #header6 .responsive, body #header4 .responsive, body #header3 .responsive, body #header5 .responsive {
+    background-color: white;
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body #header .anada-navigation .logo-light, body #header7 .anada-navigation .logo-light, body #header2 .anada-navigation .logo-light, body #header6 .anada-navigation .logo-light, body #header4 .anada-navigation .logo-light, body #header3 .anada-navigation .logo-light, body #header5 .anada-navigation .logo-light {
+    position: absolute;
+    top: 0rem;
+    left: 25rem;
+  }
+  body #header .anada-navigation .nav .dropdown, body #header7 .anada-navigation .nav .dropdown, body #header2 .anada-navigation .nav .dropdown, body #header6 .anada-navigation .nav .dropdown, body #header4 .anada-navigation .nav .dropdown, body #header3 .anada-navigation .nav .dropdown, body #header5 .anada-navigation .nav .dropdown {
+    display: none;
+  }
+  body #header .anada-navigation .nav .search, body #header7 .anada-navigation .nav .search, body #header2 .anada-navigation .nav .search, body #header6 .anada-navigation .nav .search, body #header4 .anada-navigation .nav .search, body #header3 .anada-navigation .nav .search, body #header5 .anada-navigation .nav .search {
+    position: absolute;
+    top: 1rem;
+    right: -33rem;
+  }
+  body #header .anada-navigation .nav .hamburger, body #header7 .anada-navigation .nav .hamburger, body #header2 .anada-navigation .nav .hamburger, body #header6 .anada-navigation .nav .hamburger, body #header4 .anada-navigation .nav .hamburger, body #header3 .anada-navigation .nav .hamburger, body #header5 .anada-navigation .nav .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: -30rem;
+  }
 }
 
 body {
